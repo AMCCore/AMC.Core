@@ -1,0 +1,8 @@
+D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.deps.json
+D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.dll
+D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.pdb
+D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.csproj.CoreCompileInputs.cache
+D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.AssemblyInfoInputs.cache
+D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.AssemblyInfo.cs
+D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.dll
+D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.pdb
