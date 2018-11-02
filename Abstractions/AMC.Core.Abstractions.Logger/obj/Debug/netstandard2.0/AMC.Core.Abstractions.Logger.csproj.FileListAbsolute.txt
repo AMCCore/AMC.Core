@@ -6,3 +6,12 @@ D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard
 D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.AssemblyInfo.cs
 D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.dll
 D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.pdb
+H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Logger\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.deps.json
+H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Logger\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.dll
+H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Logger\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.pdb
+H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.csprojResolveAssemblyReference.cache
+H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.csproj.CoreCompileInputs.cache
+H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.AssemblyInfoInputs.cache
+H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.AssemblyInfo.cs
+H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.dll
+H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Logger\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.pdb

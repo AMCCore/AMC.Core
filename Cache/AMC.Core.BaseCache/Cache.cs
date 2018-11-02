@@ -13,7 +13,7 @@ namespace AMC.Core.BaseCache
         private static readonly TimeSpan ShortTermCache = TimeSpan.FromMinutes(5);
         private static readonly TimeSpan LongTermCache = TimeSpan.FromMinutes(30);
 
-        private static readonly MemoryCache _cache = MemoryCache.Default;
+        private static readonly MemoryCache _cache = new MemoryCache(_cache_name_prefix);
 
         private readonly ILogger _logger;
 
@@ -104,9 +104,11 @@ namespace AMC.Core.BaseCache
             _cache.Remove(MakeCacheKey(key));
         }
 
+        private const string _cache_name_prefix = "__cc_t___";
+
         private static string MakeCacheKey(string key)
         {
-            return string.Concat("__cc_t___", key);
+            return string.Concat(_cache_name_prefix, key);
         }
 
         public void FlushCache()

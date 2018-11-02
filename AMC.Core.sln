@@ -11,7 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cache", "Cache", "{2B606890
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.BaseCache", "Cache\AMC.Core.BaseCache\AMC.Core.BaseCache.csproj", "{2184F99E-8BC2-4FBA-8B23-10E8D277799D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMC.Core.Abstractions.Logger", "Abstractions\AMC.Core.Abstractions.Logger\AMC.Core.Abstractions.Logger.csproj", "{DBFAE6C0-B22F-4E41-BFD3-2A62D65E89A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Abstractions.Logger", "Abstractions\AMC.Core.Abstractions.Logger\AMC.Core.Abstractions.Logger.csproj", "{DBFAE6C0-B22F-4E41-BFD3-2A62D65E89A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMC.Core.MS.Extention.Cache", "Cache\AMC.Core.MS.Extention.Cache\AMC.Core.MS.Extention.Cache.csproj", "{460305C0-5A43-40A9-9FE1-ED439D31E546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMC.Core.MS.Extention.Redis.Cache", "Cache\AMC.Core.MS.Extention.Redis.Cache\AMC.Core.MS.Extention.Redis.Cache.csproj", "{CC118433-28F0-4E46-8EC4-37371E2F670D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,14 @@ Global
 		{DBFAE6C0-B22F-4E41-BFD3-2A62D65E89A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBFAE6C0-B22F-4E41-BFD3-2A62D65E89A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBFAE6C0-B22F-4E41-BFD3-2A62D65E89A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{460305C0-5A43-40A9-9FE1-ED439D31E546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460305C0-5A43-40A9-9FE1-ED439D31E546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460305C0-5A43-40A9-9FE1-ED439D31E546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460305C0-5A43-40A9-9FE1-ED439D31E546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC118433-28F0-4E46-8EC4-37371E2F670D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC118433-28F0-4E46-8EC4-37371E2F670D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC118433-28F0-4E46-8EC4-37371E2F670D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC118433-28F0-4E46-8EC4-37371E2F670D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +51,8 @@ Global
 		{6B509A26-0EEA-40BC-8FD1-99F1752D37B6} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
 		{2184F99E-8BC2-4FBA-8B23-10E8D277799D} = {2B606890-FBDA-4EB1-9007-E7656ABF5684}
 		{DBFAE6C0-B22F-4E41-BFD3-2A62D65E89A1} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
+		{460305C0-5A43-40A9-9FE1-ED439D31E546} = {2B606890-FBDA-4EB1-9007-E7656ABF5684}
+		{CC118433-28F0-4E46-8EC4-37371E2F670D} = {2B606890-FBDA-4EB1-9007-E7656ABF5684}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BE01E95-B84F-4BEF-87F6-0041B806229B}
