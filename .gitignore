@@ -22,3 +22,5 @@ TestResult.xml
 Version.cs
 Version.h
 Version.cpp
+.vs/AMC.Core/v15/.suo
+*.cache
