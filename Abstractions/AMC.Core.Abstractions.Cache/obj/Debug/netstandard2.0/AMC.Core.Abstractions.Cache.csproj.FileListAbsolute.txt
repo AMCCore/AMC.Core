@@ -15,3 +15,4 @@ H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Cache\obj\Debug\netst
 H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Cache\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.AssemblyInfo.cs
 H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Cache\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.dll
 H:\WEB Dev\AMC.Core 4.8\Abstractions\AMC.Core.Abstractions.Cache\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.pdb
+D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Cache\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.csprojAssemblyReference.cache
