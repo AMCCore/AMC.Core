@@ -1,6 +1,4 @@
 # ignore all logs
 *.log
 
-#
-*.cache
-.vs/**
+/.vs/**
