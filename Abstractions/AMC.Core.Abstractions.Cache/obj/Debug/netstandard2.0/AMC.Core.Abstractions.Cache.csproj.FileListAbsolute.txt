@@ -1,7 +1,6 @@
 D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Cache\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.deps.json
 D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Cache\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.dll
 D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Cache\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.pdb
-D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Cache\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.csprojAssemblyReference.cache
 D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Cache\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.csproj.CoreCompileInputs.cache
 D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Cache\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.AssemblyInfoInputs.cache
 D:\DEV2\AMC.Core\Abstractions\AMC.Core.Abstractions.Cache\obj\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.AssemblyInfo.cs
