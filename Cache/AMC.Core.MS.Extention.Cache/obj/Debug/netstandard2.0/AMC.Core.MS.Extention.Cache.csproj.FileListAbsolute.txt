@@ -12,3 +12,17 @@ H:\WEB Dev\AMC.Core 4.8\Cache\AMC.Core.MS.Extention.Cache\obj\Debug\netstandard2
 H:\WEB Dev\AMC.Core 4.8\Cache\AMC.Core.MS.Extention.Cache\obj\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.csproj.CopyComplete
 H:\WEB Dev\AMC.Core 4.8\Cache\AMC.Core.MS.Extention.Cache\obj\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.dll
 H:\WEB Dev\AMC.Core 4.8\Cache\AMC.Core.MS.Extention.Cache\obj\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.pdb
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\bin\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.deps.json
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\bin\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.dll
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\bin\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.pdb
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.dll
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.dll
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Cache.pdb
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\bin\Debug\netstandard2.0\AMC.Core.Abstractions.Logger.pdb
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\obj\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.csprojAssemblyReference.cache
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\obj\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.csproj.CoreCompileInputs.cache
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\obj\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.AssemblyInfoInputs.cache
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\obj\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.AssemblyInfo.cs
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\obj\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.csproj.CopyComplete
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\obj\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.dll
+D:\DEV2\AMC.Core\Cache\AMC.Core.MS.Extention.Cache\obj\Debug\netstandard2.0\AMC.Core.MS.Extention.Cache.pdb

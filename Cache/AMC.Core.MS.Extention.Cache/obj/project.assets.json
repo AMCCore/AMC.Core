@@ -72,7 +72,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "NETStandard.Library/2.0.1": {
+      "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -176,7 +176,7 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
-      "sha512": "R44kCSYpeZ8JmEb+SLWVdi3RttxuisvCB93zcGVU/menrIEY3klRFAH0dXyyUKmNZrUnxFJVuaVdkEuEsQ9EtA==",
+      "sha512": "PW1596sF97gpIc1JuUuYvTmeLfeqC5whbWPsWgJhN0fdwz683him3b/HB0dqhFesVssOjnnA0fEz4+S0gUeBqA==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.1",
       "files": [
@@ -188,7 +188,7 @@
       ]
     },
     "Microsoft.Extensions.Options/2.1.1": {
-      "sha512": "A5Cu/5YMuJgEsW21WzPlpK3z+v3ZBF/cV6dl/9t19CtO3qf+EX5lB9dHBr+swsz6uZA3weH1mDXGVs6ukknDkg==",
+      "sha512": "j0zOfTt1Qm+JDW2m+6Q/aj1m4C8+onudUu4ls/fN69VxruZkMWmX1bPKkbkYIPNNxJsf4k7FOkVq5o1vEFq9pQ==",
       "type": "package",
       "path": "microsoft.extensions.options/2.1.1",
       "files": [
@@ -200,7 +200,7 @@
       ]
     },
     "Microsoft.Extensions.Primitives/2.1.1": {
-      "sha512": "jVkZs8NkUIhooFh8iJFIGJAJAeTrwORjM06i4sBw+/VVC8zcqduCIG1QCqjxbGACbR+GkLEnhZdxLjL8qHLHIg==",
+      "sha512": "Svz25/egj1TsNL4118jyMqkhDiu0l8QYWq2p52P4BBN0GbqwR18ZRIctSP5TTDJy0m0EFC8aB2FOVjGtvEGWSA==",
       "type": "package",
       "path": "microsoft.extensions.primitives/2.1.1",
       "files": [
@@ -212,7 +212,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "mlBHuHkuq4oaD4OBWJ34n+uS9qBoIKuhk2X1i0VOKKk0sGhAxVTa2Tj9yMbNoS2j68YF+VYLiQn2cioMcBbqAg==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -224,16 +224,13 @@
         "runtime.json"
       ]
     },
-    "NETStandard.Library/2.0.1": {
-      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
+    "NETStandard.Library/2.0.3": {
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
-      "path": "netstandard.library/2.0.1",
+      "path": "netstandard.library/2.0.3",
       "files": [
         "LICENSE.TXT",
-        "NETStandard.Library.2.0.1.nupkg.sha512",
-        "NETStandard.Library.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
-        "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
         "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
         "build/netstandard2.0/ref/System.AppContext.dll",
@@ -349,7 +346,9 @@
         "build/netstandard2.0/ref/mscorlib.dll",
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
-        "lib/netstandard1.0/_._"
+        "lib/netstandard1.0/_._",
+        "netstandard.library.2.0.3.nupkg.sha512",
+        "netstandard.library.nuspec"
       ]
     },
     "System.Buffers/4.4.0": {
@@ -376,7 +375,7 @@
       ]
     },
     "System.Memory/4.5.1": {
-      "sha512": "oonnLQPZAGD21qtNMG4EtVmbYOInk2jV7M+g108B6OHOb67ZOaWnA/K8P5oQ6uK9wxKzB1iEXSChQOi2scKOqA==",
+      "sha512": "vcG3/MbfpxznMkkkaAblJi7RHOmuP7kawQMhDgLSuA1tRpRQYsFSCTxRSINDUgn2QNn2jWeLxv8er5BXbyACkw==",
       "type": "package",
       "path": "system.memory/4.5.1",
       "files": [
@@ -441,7 +440,7 @@
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/4.5.1": {
-      "sha512": "x/3d5xb+mc9e4I2GOOT+HPRWMZLbYjNN/kYKsb0fyUKcWizn/t1CIrGRLIBhv7H0ptYEt+WTTztdPmwSUMyKig==",
+      "sha512": "qUJMNWhbm9oZ3XaMFiEMiYmRPszbnXIkRIi7+4b2Md2xZ6JUOepf0/kY3S85qistRohl9OdMe4PsO+RdG2kTIQ==",
       "type": "package",
       "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "files": [
@@ -480,31 +479,28 @@
       "AMC.Core.Abstractions.Cache >= 1.0.0",
       "AMC.Core.Abstractions.Logger >= 1.0.0",
       "Microsoft.Extensions.Caching.Memory >= 2.1.2",
-      "NETStandard.Library >= 2.0.1"
+      "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
-    "e:\\Users\\BigMan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\markin.n.i\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\WEB Dev\\AMC.Core 4.8\\Cache\\AMC.Core.MS.Extention.Cache\\AMC.Core.MS.Extention.Cache.csproj",
+      "projectUniqueName": "D:\\DEV2\\AMC.Core\\Cache\\AMC.Core.MS.Extention.Cache\\AMC.Core.MS.Extention.Cache.csproj",
       "projectName": "AMC.Core.MS.Extention.Cache",
-      "projectPath": "H:\\WEB Dev\\AMC.Core 4.8\\Cache\\AMC.Core.MS.Extention.Cache\\AMC.Core.MS.Extention.Cache.csproj",
-      "packagesPath": "e:\\Users\\BigMan\\.nuget\\packages\\",
-      "outputPath": "H:\\WEB Dev\\AMC.Core 4.8\\Cache\\AMC.Core.MS.Extention.Cache\\obj\\",
+      "projectPath": "D:\\DEV2\\AMC.Core\\Cache\\AMC.Core.MS.Extention.Cache\\AMC.Core.MS.Extention.Cache.csproj",
+      "packagesPath": "C:\\Users\\markin.n.i\\.nuget\\packages\\",
+      "outputPath": "D:\\DEV2\\AMC.Core\\Cache\\AMC.Core.MS.Extention.Cache\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "e:\\Users\\BigMan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\markin.n.i\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -516,11 +512,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "H:\\WEB Dev\\AMC.Core 4.8\\Abstractions\\AMC.Core.Abstractions.Cache\\AMC.Core.Abstractions.Cache.csproj": {
-              "projectPath": "H:\\WEB Dev\\AMC.Core 4.8\\Abstractions\\AMC.Core.Abstractions.Cache\\AMC.Core.Abstractions.Cache.csproj"
+            "D:\\DEV2\\AMC.Core\\Abstractions\\AMC.Core.Abstractions.Cache\\AMC.Core.Abstractions.Cache.csproj": {
+              "projectPath": "D:\\DEV2\\AMC.Core\\Abstractions\\AMC.Core.Abstractions.Cache\\AMC.Core.Abstractions.Cache.csproj"
             },
-            "H:\\WEB Dev\\AMC.Core 4.8\\Abstractions\\AMC.Core.Abstractions.Logger\\AMC.Core.Abstractions.Logger.csproj": {
-              "projectPath": "H:\\WEB Dev\\AMC.Core 4.8\\Abstractions\\AMC.Core.Abstractions.Logger\\AMC.Core.Abstractions.Logger.csproj"
+            "D:\\DEV2\\AMC.Core\\Abstractions\\AMC.Core.Abstractions.Logger\\AMC.Core.Abstractions.Logger.csproj": {
+              "projectPath": "D:\\DEV2\\AMC.Core\\Abstractions\\AMC.Core.Abstractions.Logger\\AMC.Core.Abstractions.Logger.csproj"
             }
           }
         }
@@ -541,7 +537,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.1, )",
+            "version": "[2.0.3, )",
             "autoReferenced": true
           }
         },
