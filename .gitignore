@@ -2,7 +2,7 @@
 *.log
 
 #vs files
-.vs/**
+.vs/
 !.gitignore
 
 /build/
