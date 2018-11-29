@@ -110,6 +110,10 @@
       <Project>{dbfae6c0-b22f-4e41-bfd3-2a62d65e89a1}</Project>
       <Name>AMC.Core.Abstractions.Logger</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Loggers\AMC.Core.Log4Net\AMC.Core.Log4Net.csproj">
+      <Project>{b2644729-84d1-41a1-9bcd-be6a57161ed3}</Project>
+      <Name>AMC.Core.Log4Net</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
