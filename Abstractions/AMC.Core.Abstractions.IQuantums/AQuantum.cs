@@ -5,13 +5,21 @@ using System.Text;
 
 namespace AMC.Core.Abstractions.Quantums
 {
-    internal class AQuantum : DynamicObject
+    public class AQuantum : DynamicObject
     {
         public long Id { get; private set; }
 
         public QuantumType QuantumType { get; private set; }
 
-        protected ValueCollectionDictionary Values { get; set; }
+        internal ValueCollectionDictionary Values { get; set; }
+
+        public DateTime? DateCreated { get; private set; }
+
+        protected long? CreatorId { get; set; }
+
+        public DateTime? DateUpdated { get; private set; }
+
+        protected long? UpdaterId { get; set; }
 
         public override bool TryGetMember(GetMemberBinder binder, out object result)
         {
@@ -20,10 +28,20 @@ namespace AMC.Core.Abstractions.Quantums
                 result = Id;
                 return true;
             }
-            else if (string.Equals(binder.Name, nameof(QuantumType), StringComparison.OrdinalIgnoreCase))
+            if (string.Equals(binder.Name, nameof(QuantumType), StringComparison.OrdinalIgnoreCase))
             {
                 result = QuantumType;
                 return true;
+            }
+            if (string.Equals(binder.Name, nameof(DateCreated), StringComparison.OrdinalIgnoreCase))
+            {
+                result = DateCreated;
+                return DateCreated.HasValue;
+            }
+            if (string.Equals(binder.Name, nameof(DateUpdated), StringComparison.OrdinalIgnoreCase))
+            {
+                result = DateUpdated;
+                return DateUpdated.HasValue;
             }
 
             return Values.TryGetValue(binder.Name, out result);

@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Log4Net", "Loggers
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Abstractions.IQuantums", "Abstractions\AMC.Core.Abstractions.IQuantums\AMC.Core.Abstractions.IQuantums.csproj", "{F6A77D5E-C776-49A5-AB04-3D16B9CE85C8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{89E79EE7-8BD2-4489-A7FF-3B5AF91DB28C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
