@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Log4Net", "Loggers
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{89E79EE7-8BD2-4489-A7FF-3B5AF91DB28C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Abstractions.IQuantums", "Abstractions\AMC.Core.Abstractions.IQuantums\AMC.Core.Abstractions.IQuantums.csproj", "{C0C59334-5AB4-4729-A65C-F1F21B079B11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{B2644729-84D1-41A1-9BCD-BE6A57161ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2644729-84D1-41A1-9BCD-BE6A57161ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2644729-84D1-41A1-9BCD-BE6A57161ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C59334-5AB4-4729-A65C-F1F21B079B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C59334-5AB4-4729-A65C-F1F21B079B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C59334-5AB4-4729-A65C-F1F21B079B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C59334-5AB4-4729-A65C-F1F21B079B11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +81,7 @@ Global
 		{CC118433-28F0-4E46-8EC4-37371E2F670D} = {2B606890-FBDA-4EB1-9007-E7656ABF5684}
 		{B0A35D2A-A27C-4964-ADF5-4398373C11E4} = {0AC65449-308F-411B-B80D-6A7180C25430}
 		{B2644729-84D1-41A1-9BCD-BE6A57161ED3} = {721E0BF3-630B-4F53-AFD4-C02F26EF4070}
+		{C0C59334-5AB4-4729-A65C-F1F21B079B11} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BE01E95-B84F-4BEF-87F6-0041B806229B}
