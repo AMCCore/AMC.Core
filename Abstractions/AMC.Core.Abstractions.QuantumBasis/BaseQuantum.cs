@@ -17,8 +17,6 @@ namespace AMC.Core.Abstractions.QuantumBasis
 
         public ulong Id { get; private set; }
 
-        protected QuantumTypes.BaseQuantumType _quantumType;
-
         public QuantumTypes.BaseQuantumType QuantumType
         {
             get
@@ -26,5 +24,10 @@ namespace AMC.Core.Abstractions.QuantumBasis
                 return _quantumType;
             }
         }
+        protected QuantumTypes.BaseQuantumType _quantumType;
+
+        public QuantumValueCollection Valuse { get; private set; }
+
+        public IReadOnlyCollection<QuantumHistory.QuantumHistoryEvent> Events { get; private set; }
     }
 }

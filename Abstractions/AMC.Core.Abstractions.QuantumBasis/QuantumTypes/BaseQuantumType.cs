@@ -36,5 +36,7 @@ namespace AMC.Core.Abstractions.QuantumBasis.QuantumTypes
             return 0;
         }
 
+        public IReadOnlyCollection<QuantumHistory.QuantumTypeHistoryEvent> Events { get; private set; }
+
     }
 }

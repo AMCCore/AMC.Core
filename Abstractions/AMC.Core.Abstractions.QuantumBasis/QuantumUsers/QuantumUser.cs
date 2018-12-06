@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using AMC.Core.Abstractions.QuantumBasis.QuantumTypes;
 
-namespace AMC.Core.Abstractions.QuantumBasis
+namespace AMC.Core.Abstractions.QuantumBasis.QuantumUsers
 {
     public class QuantumUser : BaseQuantum
     {
