@@ -20,6 +20,7 @@ namespace Testing
         [TestMethod]
         public void TestMethod1()
         {
+            //add some new data
             var _loggerFactory = Container.ResolveAll<AMC.Core.Abstractions.Logger.ILoggerFactory>().First();
             var _logger = _loggerFactory.Create(typeof(UnitTest1));
 
