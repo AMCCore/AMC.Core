@@ -24,7 +24,5 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider.SQLKataQueryBuilderExtention
             SqlResult result = compiler.Compile(query);
             return new SQLKataQueryBulder() { SqlClause = result.Sql, Parameters = result.NamedBindings.AsParallel().Select(ss => (IDbDataParameter)new System.Data.SqlClient.SqlParameter(ss.Key, ss.Value)).ToList() };
         }
-
-
     }
 }
