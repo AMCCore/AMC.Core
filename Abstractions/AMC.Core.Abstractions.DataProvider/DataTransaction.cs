@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AMC.Core.Abstractions.DataProvider
 {
-    public abstract class DataTransaction : DataStorage
+    public abstract class DataTransaction : BaseDataStorage
     {
         public SqlDataTransactionState State
         {
