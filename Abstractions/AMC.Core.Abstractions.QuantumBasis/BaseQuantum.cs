@@ -26,6 +26,9 @@ namespace AMC.Core.Abstractions.QuantumBasis
         }
         protected QuantumTypes.BaseQuantumType _quantumType;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public QuantumValueCollection Valuse { get; private set; }
 
         public IReadOnlyCollection<QuantumHistory.QuantumHistoryEvent> Events { get; private set; }
