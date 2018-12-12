@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AMC.Core.Abstractions.QuantumBasis
 {
-    public class BaseQuantum
+    public abstract class BaseQuantum
     {
         protected BaseQuantum()
         {
