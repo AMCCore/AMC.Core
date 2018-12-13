@@ -7,7 +7,7 @@ namespace AMC.Core.Abstractions.QuantumBasis.QuantumUsers
 {
     public class QuantumUser : BaseQuantum
     {
-        public QuantumUser() : base(new QuantumTypes.QuantumUser())
+        public QuantumUser() : base(new QuantumTypes.QuantumUserType())
         {
         }
     }

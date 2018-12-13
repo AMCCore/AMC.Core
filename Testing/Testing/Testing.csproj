@@ -117,6 +117,10 @@
       <Project>{dbfae6c0-b22f-4e41-bfd3-2a62d65e89a1}</Project>
       <Name>AMC.Core.Abstractions.Logger</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.QuantumBasis\AMC.Core.Abstractions.QuantumBasis.csproj">
+      <Project>{d7e02581-6116-48a9-8e45-80645ab25304}</Project>
+      <Name>AMC.Core.Abstractions.QuantumBasis</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\DataStorages\AMC.Core.DataStorages.MSSQLDataProvider\AMC.Core.DataStorages.MSSQLDataProvider.csproj">
       <Project>{150df3f4-564d-436e-837b-1b9236fabd57}</Project>
       <Name>AMC.Core.DataStorages.MSSQLDataProvider</Name>
@@ -124,6 +128,10 @@
     <ProjectReference Include="..\..\Loggers\AMC.Core.Log4Net\AMC.Core.Log4Net.csproj">
       <Project>{b2644729-84d1-41a1-9bcd-be6a57161ed3}</Project>
       <Name>AMC.Core.Log4Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logic\AMC.Core.QuantumDataProvider\AMC.Core.Logic.QuantumDataProvider.csproj">
+      <Project>{5ae347dd-14e8-406b-a18f-23792212d141}</Project>
+      <Name>AMC.Core.Logic.QuantumDataProvider</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

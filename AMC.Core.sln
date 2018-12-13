@@ -37,7 +37,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.DataStorages.MSSQL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Abstractions.QuantumBasis", "Abstractions\AMC.Core.Abstractions.QuantumBasis\AMC.Core.Abstractions.QuantumBasis.csproj", "{D7E02581-6116-48A9-8E45-80645AB25304}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMC.Core.QuantumDataProvider", "Logic\AMC.Core.QuantumDataProvider\AMC.Core.QuantumDataProvider.csproj", "{5AE347DD-14E8-406B-A18F-23792212D141}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Logic.QuantumDataProvider", "Logic\AMC.Core.QuantumDataProvider\AMC.Core.Logic.QuantumDataProvider.csproj", "{5AE347DD-14E8-406B-A18F-23792212D141}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
