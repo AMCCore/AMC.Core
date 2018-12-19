@@ -58,7 +58,7 @@ namespace AMC.Core.Logic.QuantumDataProvider
         {
             _logger?.Debug(string.Format(_debugBegin, instance.Id, _delete));
             _cacheRepository?.Remove(instance);
-            //_storage?.Delete(_populator.Populate(instance));
+            _storage?.Delete(_populator.Delete(instance));
             _logger?.Debug(string.Format(_debugEnd, instance.Id, _delete));
         }
 

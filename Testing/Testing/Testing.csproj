@@ -117,6 +117,10 @@
       <Project>{dbfae6c0-b22f-4e41-bfd3-2a62d65e89a1}</Project>
       <Name>AMC.Core.Abstractions.Logger</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.QuantumAdapter\AMC.Core.Abstractions.QuantumAdapter.csproj">
+      <Project>{3f82df3a-a64f-4a18-9e68-08ba12beb76c}</Project>
+      <Name>AMC.Core.Abstractions.QuantumAdapter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.QuantumBasis\AMC.Core.Abstractions.QuantumBasis.csproj">
       <Project>{d7e02581-6116-48a9-8e45-80645ab25304}</Project>
       <Name>AMC.Core.Abstractions.QuantumBasis</Name>
