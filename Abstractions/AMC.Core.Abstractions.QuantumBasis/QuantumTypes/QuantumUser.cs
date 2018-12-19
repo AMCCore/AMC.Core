@@ -4,11 +4,11 @@ using System.Text;
 
 namespace AMC.Core.Abstractions.QuantumBasis.QuantumTypes
 {
-    public class QuantumUser : BaseQuantumType
+    public class QuantumUserType : BaseQuantumType
     {
         private const string _code = "User";
 
-        public QuantumUser() : base(_code)
+        public QuantumUserType() : base(_code)
         {
         }
 

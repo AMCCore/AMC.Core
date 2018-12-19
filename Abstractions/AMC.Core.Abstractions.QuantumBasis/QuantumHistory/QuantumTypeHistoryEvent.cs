@@ -7,5 +7,7 @@ namespace AMC.Core.Abstractions.QuantumBasis.QuantumHistory
     public sealed class QuantumTypeHistoryEvent : AHistoryEvent
     {
         public uint QuantumTypeId { get; private set; }
+
+        public string QuantumTypeSnapshoot { get; private set; }
     }
 }
