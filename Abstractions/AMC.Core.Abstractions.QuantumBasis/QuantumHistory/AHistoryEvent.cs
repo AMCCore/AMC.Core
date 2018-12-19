@@ -10,6 +10,6 @@ namespace AMC.Core.Abstractions.QuantumBasis.QuantumHistory
 
         public DateTime EventDate { get; private set; }
 
-        public string QuantumSnapshoot { get; private set; }
+        public ulong UserId { get; private set; }
     }
 }

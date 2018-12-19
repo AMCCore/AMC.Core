@@ -39,6 +39,11 @@ namespace AMC.Core.Abstractions.DataProvider
             return new SqlCommandProperties(this.Helper.OpenConnection(), query, type, true);
         }
 
+        protected virtual SqlCommandProperties PrepareCommand(QueryBuilder.IQueryBuilder Builder, CommandType type = CommandType.Text)
+        {
+            return PrepareCommand(Builder.SqlClause, type, Builder.Parameters);
+        }
+
         public abstract void Dispose();
     }
 }
