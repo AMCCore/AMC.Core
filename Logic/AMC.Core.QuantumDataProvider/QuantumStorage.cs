@@ -50,7 +50,7 @@ namespace AMC.Core.Logic.QuantumDataProvider
         {
             _logger?.Debug(string.Format(_debugBegin, instance.Id, _save));
             _cacheRepository?.Remove(instance);
-            _storage?.CreateOrUpdate(_populator.Populate(instance));
+            _storage?.CreateOrUpdate(_populator.CreateOrUpdate(instance));
             _logger?.Debug(string.Format(_debugEnd, instance.Id, _save));
         }
             
@@ -58,7 +58,7 @@ namespace AMC.Core.Logic.QuantumDataProvider
         {
             _logger?.Debug(string.Format(_debugBegin, instance.Id, _delete));
             _cacheRepository?.Remove(instance);
-            _storage?.Delete(_populator.Populate(instance));
+            //_storage?.Delete(_populator.Populate(instance));
             _logger?.Debug(string.Format(_debugEnd, instance.Id, _delete));
         }
 
@@ -70,7 +70,7 @@ namespace AMC.Core.Logic.QuantumDataProvider
                 T _res = _cacheRepository?.Load(Activator.CreateInstance(typeof(T), new object[] { Id[i] }) as ICacheable) as T;
                 if (_res == null)
                 {
-                    _res = (T)_storage?.Load(_populator.Populate(default(T)));
+                    _res = _populator?.Populate(_storage?.Load(_populator?.BaseLoad()));
                     _cacheRepository?.Save(_res);
                 }
                 _logger?.Debug(string.Format(_debugEnd, Id[i], _load));
