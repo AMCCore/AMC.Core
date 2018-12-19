@@ -44,6 +44,21 @@ namespace AMC.Core.Abstractions.DataProvider
             return PrepareCommand(Builder.SqlClause, type, Builder.Parameters);
         }
 
+        public virtual void CreateOrUpdate(QueryBuilder.IQueryBuilder Builder, CommandType type = CommandType.Text)
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual object Load(QueryBuilder.IQueryBuilder Builder, CommandType type = CommandType.Text)
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual void Delete(QueryBuilder.IQueryBuilder Builder, CommandType type = CommandType.Text)
+        {
+            throw new NotImplementedException();
+        }
+
         public abstract void Dispose();
     }
 }
