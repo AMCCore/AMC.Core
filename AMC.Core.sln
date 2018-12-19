@@ -39,7 +39,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Abstractions.Quant
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Logic.QuantumDataProvider", "Logic\AMC.Core.QuantumDataProvider\AMC.Core.Logic.QuantumDataProvider.csproj", "{5AE347DD-14E8-406B-A18F-23792212D141}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMC.Core.Abstractions.QuantumAdapter", "Abstractions\AMC.Core.Abstractions.QuantumAdapter\AMC.Core.Abstractions.QuantumAdapter.csproj", "{3F82DF3A-A64F-4A18-9E68-08BA12BEB76C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Abstractions.QuantumAdapter", "Abstractions\AMC.Core.Abstractions.QuantumAdapter\AMC.Core.Abstractions.QuantumAdapter.csproj", "{3F82DF3A-A64F-4A18-9E68-08BA12BEB76C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
