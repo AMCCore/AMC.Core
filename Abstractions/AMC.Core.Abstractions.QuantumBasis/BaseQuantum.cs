@@ -8,23 +8,6 @@ namespace AMC.Core.Abstractions.QuantumBasis
 {
     public abstract class BaseQuantum : ICacheable
     {
-        private class Zusul
-        {
-            private Dictionary<int, object> _dict = new Dictionary<int, object>();
-            
-            public object this[int index]
-            {
-                get
-                {
-                    return _dict[index];
-                }
-                set
-                {
-                    _dict[index] = value;
-                }
-            }
-        }
-
         private BaseQuantum()
         {
         }
@@ -50,9 +33,6 @@ namespace AMC.Core.Abstractions.QuantumBasis
         }
         protected QuantumTypes.BaseQuantumType _quantumType;
 
-        /// <summary>
-        /// 
-        /// </summary>
         public QuantumValueCollection Valuse { get; private set; }
 
         public IReadOnlyCollection<QuantumHistory.QuantumHistoryEvent> Events { get; private set; }
