@@ -41,6 +41,9 @@ namespace Testing
             var somedata = storage.ExecuteQuery(query.GetQueryBuilder());
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void QuantumStorageTest()
         {
