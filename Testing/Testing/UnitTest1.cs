@@ -14,6 +14,10 @@ namespace Testing
 {
     public class TestPopulator : AMC.Core.Abstractions.QuantumAdapter.IPopulator<QuantumUser>
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public IQueryBuilder BaseLoad()
         {
             throw new NotImplementedException();
