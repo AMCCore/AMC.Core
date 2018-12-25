@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Abstractions.DataP
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStorages", "DataStorages", "{E138A6C0-93C8-4477-8149-80C68F337D03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMC.Core.Abstractions.IQuants", "Abstractions\AMC.Core.Abstractions.IQuants\AMC.Core.Abstractions.IQuants.csproj", "{9C4B9A76-04FA-4432-9626-591CC52B901D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMC.Core.Abstractions.Quantums", "Abstractions\AMC.Core.Abstractions.Quantums\AMC.Core.Abstractions.Quantums.csproj", "{0546642E-9E8D-439E-9BA8-5BDA1D8685A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,10 +73,10 @@ Global
 		{14261FB2-A3E0-4A66-94AC-25DAA4BA3D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14261FB2-A3E0-4A66-94AC-25DAA4BA3D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14261FB2-A3E0-4A66-94AC-25DAA4BA3D40}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9C4B9A76-04FA-4432-9626-591CC52B901D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C4B9A76-04FA-4432-9626-591CC52B901D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C4B9A76-04FA-4432-9626-591CC52B901D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C4B9A76-04FA-4432-9626-591CC52B901D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0546642E-9E8D-439E-9BA8-5BDA1D8685A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0546642E-9E8D-439E-9BA8-5BDA1D8685A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0546642E-9E8D-439E-9BA8-5BDA1D8685A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0546642E-9E8D-439E-9BA8-5BDA1D8685A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,7 +90,7 @@ Global
 		{B0A35D2A-A27C-4964-ADF5-4398373C11E4} = {0AC65449-308F-411B-B80D-6A7180C25430}
 		{B2644729-84D1-41A1-9BCD-BE6A57161ED3} = {721E0BF3-630B-4F53-AFD4-C02F26EF4070}
 		{14261FB2-A3E0-4A66-94AC-25DAA4BA3D40} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
-		{9C4B9A76-04FA-4432-9626-591CC52B901D} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
+		{0546642E-9E8D-439E-9BA8-5BDA1D8685A4} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BE01E95-B84F-4BEF-87F6-0041B806229B}
