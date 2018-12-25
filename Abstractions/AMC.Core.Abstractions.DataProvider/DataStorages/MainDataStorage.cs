@@ -3,50 +3,22 @@ using System.Collections.Generic;
 using System.Data;
 using System.Text;
 
-namespace AMC.Core.Abstractions.DataProvider
+namespace AMC.Core.Abstractions.DataProvider.DataStorages
 {
-    public abstract class DataStorage : IDisposable
+    public abstract class MainDataStorage : BaseDataStorage
     {
-        protected readonly DataHelper Helper;
-
-        public event EventHandler<EventArgs.ErrorEventArgs> Error;
-
-        protected virtual void OnError(EventArgs.ErrorEventArgs args)
-        {
-            Error?.Invoke(this, args);
-        }
-
-        protected DataStorage(DataHelper Helper)
+        protected MainDataStorage(DataHelper Helper) : base(Helper)
         {
             _scalar = new Lazy<ScalarValuesExtractor>(() => new ScalarValuesExtractor(this), true);
-            this.Helper = Helper;
-        }
-
-        private SqlCommandProperties PrepareCommand(string query, CommandType type, IEnumerable<IDbDataParameter> parameters)
-        {
-            var result = PrepareCommand(query, type);
-            if (parameters != null)
-            {
-                foreach (var p in parameters)
-                {
-                    result.Parameters.Add(p);
-                }
-            }
-            return result;
-        }
-
-        protected virtual SqlCommandProperties PrepareCommand(string query, CommandType type)
-        {
-            return new SqlCommandProperties(this.Helper.OpenConnection(), query, type, true);
         }
 
         #region Scalar
 
         public struct ScalarValuesExtractor
         {
-            private readonly DataStorage _owner;
+            private readonly MainDataStorage _owner;
 
-            internal ScalarValuesExtractor(DataStorage owner)
+            internal ScalarValuesExtractor(MainDataStorage owner)
             {
                 _owner = owner;
             }
@@ -218,6 +190,6 @@ namespace AMC.Core.Abstractions.DataProvider
 
         #endregion
 
-        public abstract void Dispose();
+        public override abstract void Dispose();
     }
 }

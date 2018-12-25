@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>AMC.Core.Logic.QuantumDataProvider</AssemblyName>
+    <RootNamespace>AMC.Core.Logic.QuantumDataProvider</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.Cache\AMC.Core.Abstractions.Cache.csproj" />
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.DataProvider\AMC.Core.Abstractions.DataProvider.csproj" />
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.Logger\AMC.Core.Abstractions.Logger.csproj" />
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.QuantumAdapter\AMC.Core.Abstractions.QuantumAdapter.csproj" />
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.QuantumBasis\AMC.Core.Abstractions.QuantumBasis.csproj" />
+  </ItemGroup>
+
+</Project>

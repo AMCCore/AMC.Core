@@ -2,7 +2,7 @@
 
 namespace AMC.Core.Abstractions.DataProvider
 {
-    public abstract class TransactDataStorage : DataStorage
+    public abstract class TransactDataStorage : DataStorages.MainDataStorage
     {
         protected TransactDataStorage(DataHelper Helper) : base(Helper) { }
 
