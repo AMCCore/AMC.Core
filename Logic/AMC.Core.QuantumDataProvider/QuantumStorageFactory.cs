@@ -22,5 +22,11 @@ namespace AMC.Core.Logic.QuantumDataProvider
         {
             return new QuantumStorage<T>(Storage, Populator, _cacheRepository, _loggerFactory);
         }
+
+        public QuantumStorage<T> GetQuantumStorage<T>(BaseDataStorage Storage) where T : Abstractions.QuantumAdapter.IPopulatableQuantum<T>
+        {
+            var _zu = Activator.CreateInstance(typeof(Abstractions.QuantumAdapter.IPopulatableQuantum<T>)) as Abstractions.QuantumAdapter.IPopulatableQuantum<T>;
+            return new QuantumStorage<T>(Storage, _zu.GetPopulator(), _cacheRepository, _loggerFactory);
+        }
     }
 }
