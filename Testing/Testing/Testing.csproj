@@ -121,10 +121,6 @@
       <Project>{3f82df3a-a64f-4a18-9e68-08ba12beb76c}</Project>
       <Name>AMC.Core.Abstractions.QuantumAdapter</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.QuantumBasis\AMC.Core.Abstractions.QuantumBasis.csproj">
-      <Project>{d7e02581-6116-48a9-8e45-80645ab25304}</Project>
-      <Name>AMC.Core.Abstractions.QuantumBasis</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\DataStorages\AMC.Core.DataStorages.MSSQLDataProvider\AMC.Core.DataStorages.MSSQLDataProvider.csproj">
       <Project>{150df3f4-564d-436e-837b-1b9236fabd57}</Project>
       <Name>AMC.Core.DataStorages.MSSQLDataProvider</Name>

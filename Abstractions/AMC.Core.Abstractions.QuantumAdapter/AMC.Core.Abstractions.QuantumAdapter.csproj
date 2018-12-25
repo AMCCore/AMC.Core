@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AMC.Core.Abstractions.DataProvider\AMC.Core.Abstractions.DataProvider.csproj" />
-    <ProjectReference Include="..\AMC.Core.Abstractions.QuantumBasis\AMC.Core.Abstractions.QuantumBasis.csproj" />
+    <ProjectReference Include="..\AMC.Core.Abstractions.Quantums\AMC.Core.Abstractions.Quantums.csproj" />
   </ItemGroup>
 
 </Project>
