@@ -11,6 +11,7 @@
     <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.DataProvider\AMC.Core.Abstractions.DataProvider.csproj" />
     <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.Logger\AMC.Core.Abstractions.Logger.csproj" />
     <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.QuantumAdapter\AMC.Core.Abstractions.QuantumAdapter.csproj" />
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.Quantums\AMC.Core.Abstractions.Quantums.csproj" />
   </ItemGroup>
 
 </Project>

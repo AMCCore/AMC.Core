@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AMC.Core.Abstractions.Quantums
 {
-    public interface IQuant
+    public interface IQuant : Cache.ICacheable
     {
         ulong Id { get; }
 

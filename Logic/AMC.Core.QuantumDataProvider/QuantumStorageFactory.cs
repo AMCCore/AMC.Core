@@ -1,7 +1,6 @@
 ﻿using AMC.Core.Abstractions.Cache.Repository;
 using AMC.Core.Abstractions.DataProvider;
 using AMC.Core.Abstractions.Logger;
-using AMC.Core.Abstractions.QuantumBasis;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -19,7 +18,7 @@ namespace AMC.Core.Logic.QuantumDataProvider
             _loggerFactory = LoggerFactory;
         }
 
-        public QuantumStorage<T> GetQuantumStorage<T>(BaseDataStorage Storage, Abstractions.QuantumAdapter.IPopulator<T> Populator) where T : BaseQuantum
+        public QuantumStorage<T> GetQuantumStorage<T>(BaseDataStorage Storage, Abstractions.QuantumAdapter.IPopulator<T> Populator) where T : Abstractions.Quantums.IQuant
         {
             return new QuantumStorage<T>(Storage, Populator, _cacheRepository, _loggerFactory);
         }

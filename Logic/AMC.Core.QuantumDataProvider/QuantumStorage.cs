@@ -2,7 +2,6 @@
 using AMC.Core.Abstractions.Cache.Repository;
 using AMC.Core.Abstractions.DataProvider;
 using AMC.Core.Abstractions.Logger;
-using AMC.Core.Abstractions.QuantumBasis;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -31,7 +30,7 @@ namespace AMC.Core.Logic.QuantumDataProvider
         }
     }
 
-    public sealed class QuantumStorage<T> : QuantumStorage where T : BaseQuantum
+    public sealed class QuantumStorage<T> : QuantumStorage where T : Abstractions.Quantums.IQuant
     {
         private const string _debugBegin = "Quantum ({0}) {1} begin";
         private const string _debugEnd = "Quantum ({0}) {1} ended";
@@ -67,10 +66,9 @@ namespace AMC.Core.Logic.QuantumDataProvider
             for(uint i = 0; i < Id.Length; i++ )
             {
                 _logger?.Debug(string.Format(_debugBegin, Id[i], _load));
-                T _res = _cacheRepository?.Load(Activator.CreateInstance(typeof(T), new object[] { Id[i] }) as ICacheable) as T;
-                if (_res == null)
+                if (!(_cacheRepository?.Load(Activator.CreateInstance(typeof(T), new object[] { Id[i] }) as ICacheable) is T _res))
                 {
-                    _res = _populator?.Populate(_storage?.Load(_populator?.BaseLoad()));
+                    _res = _populator.Populate(_storage?.Load(_populator?.BaseLoad()));
                     _cacheRepository?.Save(_res);
                 }
                 _logger?.Debug(string.Format(_debugEnd, Id[i], _load));
