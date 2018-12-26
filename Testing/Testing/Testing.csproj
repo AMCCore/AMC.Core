@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="log4net.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -128,10 +129,6 @@
     <ProjectReference Include="..\..\Loggers\AMC.Core.Log4Net\AMC.Core.Log4Net.csproj">
       <Project>{b2644729-84d1-41a1-9bcd-be6a57161ed3}</Project>
       <Name>AMC.Core.Log4Net</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Logic\AMC.Core.QuantumDataProvider\AMC.Core.Logic.QuantumDataProvider.csproj">
-      <Project>{5ae347dd-14e8-406b-a18f-23792212d141}</Project>
-      <Name>AMC.Core.Logic.QuantumDataProvider</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
