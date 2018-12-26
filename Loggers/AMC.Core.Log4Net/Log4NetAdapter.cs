@@ -12,8 +12,9 @@ namespace AMC.Core.Log4Net
 
         internal Log4NetAdapter(Type type)
         {
-            //var logRepository = log4net.LogManager.GetRepository(Assembly.GetEntryAssembly());
-            //log4net.Config.XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+            var logRepository = log4net.LogManager.GetRepository(Assembly.GetEntryAssembly());
+            var fi = new FileInfo("..\\..\\log4net.config");
+            log4net.Config.XmlConfigurator.Configure(logRepository, fi);
 
             _adaptee = log4net.LogManager.GetLogger(type);
         }
