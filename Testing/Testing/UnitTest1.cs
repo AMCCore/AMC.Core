@@ -48,5 +48,11 @@ namespace Testing
 
             _logger.Log(new AMC.Core.Abstractions.Logger.LogEntry(AMC.Core.Abstractions.Logger.LoggingEventType.Error, "Hellow WindsorDI"));
         }
+
+        [TestMethod]
+        public void Base()
+        {
+            //add some new data
+        }
     }
 }
