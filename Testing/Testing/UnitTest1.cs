@@ -11,9 +11,6 @@ namespace Testing
     [TestClass]
     public class UnitTest1
     {
-        /// <summary>
-        /// 
-        /// </summary>
         private static void SetEntryAssembly()
         {
             SetEntryAssembly(Assembly.GetCallingAssembly());
