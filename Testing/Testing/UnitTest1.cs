@@ -38,5 +38,15 @@ namespace Testing
             Microsoft.Practices.Unity.Configuration.UnityConfigurationSection section = (Microsoft.Practices.Unity.Configuration.UnityConfigurationSection)System.Configuration.ConfigurationManager.GetSection("unity");
             section.Configure(Container);
         }
+
+        [TestMethod]
+        public void LoggerTest()
+        {
+            //add some new data
+            var _loggerFactory = Container.ResolveAll<AMC.Core.Abstractions.Logger.ILoggerFactory>().First();
+            var _logger = _loggerFactory.Create(typeof(UnitTest1));
+
+            _logger.Log(new AMC.Core.Abstractions.Logger.LogEntry(AMC.Core.Abstractions.Logger.LoggingEventType.Error, "Hellow WindsorDI"));
+        }
     }
 }
