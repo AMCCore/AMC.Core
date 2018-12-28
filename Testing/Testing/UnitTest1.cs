@@ -2,8 +2,6 @@
 using System.Linq;
 using System.Reflection;
 using AMC.Core.Abstractions.DataProvider.QueryBuilder;
-using AMC.Core.DataStorages.MSSQLDataProvider;
-using AMC.Core.DataStorages.MSSQLDataProvider.SQLKataQueryBuilderExtention;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SqlKata;
 using Unity;
@@ -39,17 +37,6 @@ namespace Testing
             this.Container = new Unity.UnityContainer();
             Microsoft.Practices.Unity.Configuration.UnityConfigurationSection section = (Microsoft.Practices.Unity.Configuration.UnityConfigurationSection)System.Configuration.ConfigurationManager.GetSection("unity");
             section.Configure(Container);
-
-            //configure assembly to log4net working
-            SetEntryAssembly();
-        }
-
-        [TestMethod]
-        public void MSSQLKataTesting()
-        {
-            var query = new Query("Users").Where("Id", 1).Where("Status", "Active");
-            var storage = new MSSQLDataStoage();
-            var somedata = storage.ExecuteQuery(query.GetQueryBuilder());
         }
     }
 }
