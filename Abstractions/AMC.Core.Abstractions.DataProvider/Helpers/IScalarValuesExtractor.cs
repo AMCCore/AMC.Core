@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
-using System.Text;
 
-namespace AMC.Core.Abstractions.DataProvider
+namespace AMC.Core.Abstractions.DataProvider.Helpers
 {
     public interface IScalarValuesExtractor
     {

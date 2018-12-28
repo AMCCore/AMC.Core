@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Text;
+﻿using System.Data;
 
-namespace AMC.Core.Abstractions.DataProvider
+
+namespace AMC.Core.Abstractions.DataProvider.Transactions
 {
     public interface ITransactDataStorage
     {

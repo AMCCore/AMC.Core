@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataStorages\" />
+    <Compile Remove="DataStorages\**" />
+    <EmbeddedResource Remove="DataStorages\**" />
+    <None Remove="DataStorages\**" />
   </ItemGroup>
 
 </Project>

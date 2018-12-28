@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Text;
+
+using AMC.Core.Abstractions.DataProvider.Helpers;
 
 namespace AMC.Core.Abstractions.DataProvider
 {

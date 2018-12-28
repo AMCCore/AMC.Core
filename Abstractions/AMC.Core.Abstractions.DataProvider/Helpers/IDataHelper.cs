@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AMC.Core.Abstractions.DataProvider
+﻿
+namespace AMC.Core.Abstractions.DataProvider.Helpers
 {
     public interface IDataHelper
     {
