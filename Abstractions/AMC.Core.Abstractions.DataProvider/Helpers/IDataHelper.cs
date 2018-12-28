@@ -1,4 +1,5 @@
-﻿
+﻿using System.Data;
+
 namespace AMC.Core.Abstractions.DataProvider.Helpers
 {
     public interface IDataHelper
@@ -7,6 +8,10 @@ namespace AMC.Core.Abstractions.DataProvider.Helpers
 
         string ReturnValueParameterName();
 
-        System.Data.IDbDataParameter CreateDataParameterWithValue(string Name, System.Data.ParameterDirection Direction, object Value);
+        IDbDataParameter CreateDataParameterWithValue(string Name, ParameterDirection Direction, object Value);
+
+        IDbConnection OpenConnection();
+
+        IDataAdapter GetDefaultAdapter(IDbCommand Command);
     }
 }
