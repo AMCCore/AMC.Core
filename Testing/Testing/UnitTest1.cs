@@ -16,6 +16,10 @@ namespace Testing
             SetEntryAssembly(Assembly.GetCallingAssembly());
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="assembly"></param>
         private static void SetEntryAssembly(Assembly assembly)
         {
             AppDomainManager manager = new AppDomainManager();
