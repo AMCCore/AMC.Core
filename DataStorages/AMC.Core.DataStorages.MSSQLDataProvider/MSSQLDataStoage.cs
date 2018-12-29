@@ -60,7 +60,18 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
 
         public IDataHelper Helper { get; }
 
-        public IScalarValuesExtractor Scalar => throw new NotImplementedException();
+        public IScalarValuesExtractor Scalar
+        {
+            get
+            {
+                if(_scalar == null)
+                {
+                    _scalar = new MSSQLScalatValueExtractor(this);
+                }
+                return _scalar;
+            }
+        }
+        private IScalarValuesExtractor _scalar;
 
         public event EventHandler<ErrorEventArgs> Error;
 

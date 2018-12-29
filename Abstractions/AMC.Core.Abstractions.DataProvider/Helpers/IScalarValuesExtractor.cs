@@ -9,11 +9,11 @@ namespace AMC.Core.Abstractions.DataProvider.Helpers
 
         int Int(string query, params IDbDataParameter[] parameters);
 
-        object Int(string query, CommandType type = CommandType.Text, params IDbDataParameter[] parameters);
+        int Int(string query, CommandType type = CommandType.Text, params IDbDataParameter[] parameters);
 
-        object Int(string query, CommandType type = CommandType.Text, IEnumerable<IDbDataParameter> parameters = null);
+        int Int(string query, CommandType type = CommandType.Text, IEnumerable<IDbDataParameter> parameters = null);
 
-        object Int(QueryBuilder.IQueryBuilder Builder, CommandType type = CommandType.Text);
+        int Int(QueryBuilder.IQueryBuilder Builder, CommandType type = CommandType.Text);
 
         #endregion
 
