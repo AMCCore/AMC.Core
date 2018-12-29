@@ -10,6 +10,10 @@ namespace AMC.Core.Log4Net
     {
         private readonly log4net.ILog _adaptee;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="type"></param>
         internal Log4NetAdapter(Type type)
         {
             var logRepository = log4net.LogManager.GetRepository(Assembly.GetEntryAssembly());
