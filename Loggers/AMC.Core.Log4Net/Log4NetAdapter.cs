@@ -6,7 +6,7 @@ using System.Text;
 
 namespace AMC.Core.Log4Net
 {
-    public class Log4NetAdapter : AMC.Core.Abstractions.Logger.ILogger
+    public class Log4NetAdapter : Abstractions.Logger.ILogger
     {
         private readonly log4net.ILog _adaptee;
 
@@ -19,20 +19,20 @@ namespace AMC.Core.Log4Net
             _adaptee = log4net.LogManager.GetLogger(type);
         }
 
-        void Abstractions.Logger.ILogger.Log(AMC.Core.Abstractions.Logger.LogEntry entry)
+        void Abstractions.Logger.ILogger.Log(Abstractions.Logger.LogEntry entry)
         {
             switch (entry.Severity)
             {
-                case AMC.Core.Abstractions.Logger.LoggingEventType.Debug:
+                case Abstractions.Logger.LoggingEventType.Debug:
                     _adaptee.Debug(entry.Message, entry.Exception);
                     break;
-                case AMC.Core.Abstractions.Logger.LoggingEventType.Information:
+                case Abstractions.Logger.LoggingEventType.Information:
                     _adaptee.Info(entry.Message, entry.Exception);
                     break;
-                case AMC.Core.Abstractions.Logger.LoggingEventType.Warning:
+                case Abstractions.Logger.LoggingEventType.Warning:
                     _adaptee.Warn(entry.Message, entry.Exception);
                     break;
-                case AMC.Core.Abstractions.Logger.LoggingEventType.Error:
+                case Abstractions.Logger.LoggingEventType.Error:
                     _adaptee.Error(entry.Message, entry.Exception);
                     break;
                 default:
