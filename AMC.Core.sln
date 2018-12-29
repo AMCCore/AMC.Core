@@ -33,6 +33,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStorages", "DataStorage
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Log4Net", "Loggers\AMC.Core.Log4Net\AMC.Core.Log4Net.csproj", "{B45A9BB0-996F-43EB-AD13-C8B1A94EECE5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Abstractions.Quantums", "Abstractions\AMC.Core.Abstractions.Quantums\AMC.Core.Abstractions.Quantums.csproj", "{F3DE2CF7-EB96-4956-8794-6F9947745834}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Abstractions.QuantumAdapter", "Abstractions\AMC.Core.Abstractions.QuantumAdapter\AMC.Core.Abstractions.QuantumAdapter.csproj", "{DAB43A4A-5199-4488-B7FE-BB884CA622AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.DataStorages.MSSQLDataProvider", "DataStorages\AMC.Core.DataStorages.MSSQLDataProvider\AMC.Core.DataStorages.MSSQLDataProvider.csproj", "{A996FD14-BD6C-4914-B144-A545FC204CB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +77,18 @@ Global
 		{B45A9BB0-996F-43EB-AD13-C8B1A94EECE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B45A9BB0-996F-43EB-AD13-C8B1A94EECE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B45A9BB0-996F-43EB-AD13-C8B1A94EECE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3DE2CF7-EB96-4956-8794-6F9947745834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3DE2CF7-EB96-4956-8794-6F9947745834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3DE2CF7-EB96-4956-8794-6F9947745834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3DE2CF7-EB96-4956-8794-6F9947745834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB43A4A-5199-4488-B7FE-BB884CA622AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB43A4A-5199-4488-B7FE-BB884CA622AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB43A4A-5199-4488-B7FE-BB884CA622AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB43A4A-5199-4488-B7FE-BB884CA622AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A996FD14-BD6C-4914-B144-A545FC204CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A996FD14-BD6C-4914-B144-A545FC204CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A996FD14-BD6C-4914-B144-A545FC204CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A996FD14-BD6C-4914-B144-A545FC204CB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +102,9 @@ Global
 		{B0A35D2A-A27C-4964-ADF5-4398373C11E4} = {0AC65449-308F-411B-B80D-6A7180C25430}
 		{14261FB2-A3E0-4A66-94AC-25DAA4BA3D40} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
 		{B45A9BB0-996F-43EB-AD13-C8B1A94EECE5} = {721E0BF3-630B-4F53-AFD4-C02F26EF4070}
+		{F3DE2CF7-EB96-4956-8794-6F9947745834} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
+		{DAB43A4A-5199-4488-B7FE-BB884CA622AE} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
+		{A996FD14-BD6C-4914-B144-A545FC204CB7} = {E138A6C0-93C8-4477-8149-80C68F337D03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BE01E95-B84F-4BEF-87F6-0041B806229B}
