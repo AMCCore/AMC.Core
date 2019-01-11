@@ -57,7 +57,7 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
 
         public long Long(IQueryBuilder Builder, CommandType type = CommandType.Text)
         {
-            return Long(Builder.SqlClause, type, (IEnumerable<IDbDataParameter>)Builder.Parameters);
+            return Long(Builder.SqlClause, type, Builder.Parameters);
         }
     }
 }

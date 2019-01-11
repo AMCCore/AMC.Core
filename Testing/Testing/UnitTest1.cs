@@ -40,6 +40,7 @@ namespace Testing
             this.Container = new Unity.UnityContainer();
             Microsoft.Practices.Unity.Configuration.UnityConfigurationSection section = (Microsoft.Practices.Unity.Configuration.UnityConfigurationSection)System.Configuration.ConfigurationManager.GetSection("unity");
             section.Configure(Container);
+            SetEntryAssembly();
         }
 
         [TestMethod]
