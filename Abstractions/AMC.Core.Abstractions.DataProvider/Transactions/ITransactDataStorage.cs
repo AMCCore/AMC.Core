@@ -3,7 +3,7 @@
 
 namespace AMC.Core.Abstractions.DataProvider.Transactions
 {
-    public interface ITransactDataStorage
+    public interface ITransactDataStorage : IDataStorage
     {
         IDataTransaction BeginTransaction(IsolationLevel level = IsolationLevel.ReadCommitted);
     }

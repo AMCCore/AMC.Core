@@ -100,6 +100,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PopulatorRepository.cs" />
+    <Compile Include="RootStorage.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -120,6 +122,14 @@
     <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.Logger\AMC.Core.Abstractions.Logger.csproj">
       <Project>{dbfae6c0-b22f-4e41-bfd3-2a62d65e89a1}</Project>
       <Name>AMC.Core.Abstractions.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.QuantumAdapter\AMC.Core.Abstractions.QuantumAdapter.csproj">
+      <Project>{dab43a4a-5199-4488-b7fe-bb884ca622ae}</Project>
+      <Name>AMC.Core.Abstractions.QuantumAdapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.Quantums\AMC.Core.Abstractions.Quantums.csproj">
+      <Project>{f3de2cf7-eb96-4956-8794-6f9947745834}</Project>
+      <Name>AMC.Core.Abstractions.Quantums</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\DataStorages\AMC.Core.DataStorages.MSSQLDataProvider\AMC.Core.DataStorages.MSSQLDataProvider.csproj">
       <Project>{a996fd14-bd6c-4914-b144-a545fc204cb7}</Project>

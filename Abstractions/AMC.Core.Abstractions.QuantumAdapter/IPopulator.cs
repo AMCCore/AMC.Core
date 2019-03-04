@@ -10,8 +10,10 @@ namespace AMC.Core.Abstractions.QuantumAdapter
 
         T Populate(object entiity);
 
-        DataProvider.QueryBuilder.IQueryBuilder BaseLoad();
+        DataProvider.QueryBuilder.IQueryBuilder BaseLoad(long Id);
 
         DataProvider.QueryBuilder.IQueryBuilder Delete(T entiity);
+
+        T GetCacheble(long Id);
     }
 }

@@ -7,10 +7,12 @@ namespace AMC.Core.Abstractions.QuantumAdapter
 {
     public interface IQuantumDataStorage : IDataStorage
     {
-        void QuantCreateOrUpdate<T>(T entiity) where T : IPopulatableQuantum<Quantums.IQuant>;
+        new IQuantumDataHelper Helper { get; }
 
-        T Load<T>(long Id) where T : IPopulatableQuantum<Quantums.IQuant>;
+        void QuantCreateOrUpdate<T>(T entiity) where T : Quantums.IQuant;
 
-        void Delete<T>(T entiity) where T : IPopulatableQuantum<Quantums.IQuant>;
+        T Load<T>(long Id) where T : Quantums.IQuant;
+
+        void Delete<T>(T entiity) where T : Quantums.IQuant;
     }
 }
