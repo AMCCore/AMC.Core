@@ -1,13 +1,20 @@
 ﻿using System.Data;
 
 using AMC.Core.Abstractions.DataProvider.Helpers;
+using AMC.Core.Abstractions.Logger;
 
 namespace AMC.Core.DataStorages.MSSQLDataProvider
 {
-    public struct MSSQLDataHelper : IDataHelper
+    public class MSSQLDataHelper : IDataHelper
     {
         private const string _ReturnValueParameterName = "RETURN_VALUE";
         private const string _ConnectionStringName = "main";
+
+        public MSSQLDataHelper(ILoggerFactory LoggerFactory, bool SupressError = false)
+        {
+            Logger = LoggerFactory.Create(typeof(MSSQLDataHelper));
+            this.SupressError = SupressError;
+        }
 
         private string ConnectionString
         {
@@ -22,6 +29,8 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
         }
 
         public bool SupressError { get; }
+
+        public ILogger Logger { get; }
 
         private string _connectionString;// "Data Source=37.140.192.244;Initial Catalog=u0283737_DM2;Integrated Security=False;User ID=u0283737_adm;Password=Jrz#512r";
 
@@ -50,12 +59,6 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
         public IDataAdapter GetDefaultAdapter(IDbCommand Command)
         {
             return new System.Data.SqlClient.SqlDataAdapter((System.Data.SqlClient.SqlCommand)Command);
-        }
-
-        public MSSQLDataHelper(bool SupressError = false)
-        {
-            this.SupressError = SupressError;
-            _connectionString = null;
         }
     }
 }

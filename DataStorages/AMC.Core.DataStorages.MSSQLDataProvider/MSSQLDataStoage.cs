@@ -7,10 +7,12 @@ using AMC.Core.Abstractions.DataProvider.EventArgs;
 using AMC.Core.Abstractions.DataProvider.Helpers;
 using AMC.Core.Abstractions.DataProvider.QueryBuilder;
 using AMC.Core.Abstractions.DataProvider.Transactions;
+using AMC.Core.Abstractions.Logger;
+using AMC.Core.Abstractions.Logger.Extensions;
 
 namespace AMC.Core.DataStorages.MSSQLDataProvider
 {
-    public class MSSQLDataStoage : IDataStorage, ITransactDataStorage
+    public class MSSQLDataStoage : ITransactDataStorage
     {
         protected struct SqlCommandProperties : IDisposable
         {
@@ -49,7 +51,7 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
             #endregion
         }
 
-        public MSSQLDataStoage() : this(new MSSQLDataHelper())
+        public MSSQLDataStoage(ILoggerFactory LoggerFactory) : this(new MSSQLDataHelper(LoggerFactory))
         {
         }
 
@@ -77,6 +79,7 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
 
         protected virtual void OnError(ErrorEventArgs args)
         {
+            Helper.Logger?.Log(args.Exception);
             Error?.Invoke(this, args);
         }
 

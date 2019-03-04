@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using AMC.Core.Abstractions.Logger;
+using System.Data;
 
 namespace AMC.Core.Abstractions.DataProvider.Helpers
 {
@@ -13,5 +14,7 @@ namespace AMC.Core.Abstractions.DataProvider.Helpers
         IDbConnection OpenConnection();
 
         IDataAdapter GetDefaultAdapter(IDbCommand Command);
+
+        ILogger Logger { get; }
     }
 }

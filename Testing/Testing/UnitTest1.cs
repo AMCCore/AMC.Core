@@ -56,8 +56,10 @@ namespace Testing
         [TestMethod]
         public void MSSQLKataTesting()
         {
+            var _loggerFactory = Container.ResolveAll<AMC.Core.Abstractions.Logger.ILoggerFactory>().First();
+
             var query = new Query("Users").Where("Id", 1).Where("Status", "Active");
-            var storage = new MSSQLDataStoage();
+            var storage = new MSSQLDataStoage(_loggerFactory);
             var somedata = storage.ExecuteQuery(query.GetQueryBuilder());
         }
 

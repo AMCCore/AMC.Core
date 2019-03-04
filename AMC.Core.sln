@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.Abstractions.Quant
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.DataStorages.MSSQLDataProvider", "DataStorages\AMC.Core.DataStorages.MSSQLDataProvider\AMC.Core.DataStorages.MSSQLDataProvider.csproj", "{A996FD14-BD6C-4914-B144-A545FC204CB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMC.Core.DataStorages.MSSQLQuantumDataProvider", "AMC.Core.DataStorages.MSSQLQuantumDataProvider\AMC.Core.DataStorages.MSSQLQuantumDataProvider.csproj", "{92BE9290-71D5-4161-B37E-99437793E8F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,10 @@ Global
 		{A996FD14-BD6C-4914-B144-A545FC204CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A996FD14-BD6C-4914-B144-A545FC204CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A996FD14-BD6C-4914-B144-A545FC204CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92BE9290-71D5-4161-B37E-99437793E8F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92BE9290-71D5-4161-B37E-99437793E8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92BE9290-71D5-4161-B37E-99437793E8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92BE9290-71D5-4161-B37E-99437793E8F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +111,7 @@ Global
 		{F3DE2CF7-EB96-4956-8794-6F9947745834} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
 		{DAB43A4A-5199-4488-B7FE-BB884CA622AE} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
 		{A996FD14-BD6C-4914-B144-A545FC204CB7} = {E138A6C0-93C8-4477-8149-80C68F337D03}
+		{92BE9290-71D5-4161-B37E-99437793E8F3} = {E138A6C0-93C8-4477-8149-80C68F337D03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BE01E95-B84F-4BEF-87F6-0041B806229B}

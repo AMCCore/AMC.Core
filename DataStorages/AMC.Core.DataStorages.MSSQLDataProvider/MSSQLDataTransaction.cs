@@ -8,7 +8,7 @@ using AMC.Core.Abstractions.DataProvider.Transactions;
 
 namespace AMC.Core.DataStorages.MSSQLDataProvider
 {
-    public sealed class MSSQLDataTransaction : MSSQLDataStoage, IDataTransaction
+    public class MSSQLDataTransaction : MSSQLDataStoage, IDataTransaction
     {
         internal MSSQLDataTransaction(IDataHelper Helper, IsolationLevel Level = IsolationLevel.ReadCommitted) : base(Helper)
         {

@@ -10,4 +10,8 @@
     <None Remove="DataStorages\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AMC.Core.Abstractions.Logger\AMC.Core.Abstractions.Logger.csproj" />
+  </ItemGroup>
+
 </Project>
