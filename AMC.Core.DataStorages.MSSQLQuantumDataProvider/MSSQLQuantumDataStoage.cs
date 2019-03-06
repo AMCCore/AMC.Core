@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-
-using AMC.Core.Abstractions.DataProvider;
-using AMC.Core.Abstractions.DataProvider.EventArgs;
-using AMC.Core.Abstractions.DataProvider.Helpers;
-using AMC.Core.Abstractions.DataProvider.QueryBuilder;
-using AMC.Core.Abstractions.DataProvider.Transactions;
+﻿using AMC.Core.Abstractions.DataProvider.Helpers;
 using AMC.Core.Abstractions.QuantumAdapter;
 using AMC.Core.Abstractions.Quantums;
 using AMC.Core.DataStorages.MSSQLDataProvider;
+using System;
 
 namespace AMC.Core.DataStorages.MSSQLQuantumDataProvider
 {

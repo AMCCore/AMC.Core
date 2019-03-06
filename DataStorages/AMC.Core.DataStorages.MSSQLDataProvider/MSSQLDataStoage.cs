@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 
-using AMC.Core.Abstractions.DataProvider;
 using AMC.Core.Abstractions.DataProvider.EventArgs;
 using AMC.Core.Abstractions.DataProvider.Helpers;
 using AMC.Core.Abstractions.DataProvider.QueryBuilder;
@@ -121,6 +120,7 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
 
         public int ExecuteNonQuery(string query, CommandType type = CommandType.Text, IEnumerable<IDbDataParameter> parameters = null)
         {
+            Helper.Logger?.Debug("ExecuteNonQuery start");
             using (SqlCommandProperties cp = PrepareCommand(query, type, parameters))
             {
                 try
@@ -135,6 +135,10 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
                     if (!args.SupressError) throw;
 
                     return default(int);
+                }
+                finally
+                {
+                    Helper.Logger?.Debug("ExecuteNonQuery ends");
                 }
             }
         }
@@ -160,6 +164,7 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
 
         public object ExecuteProcedure(string procedureName, IEnumerable<IDbDataParameter> parameters)
         {
+            Helper.Logger?.Debug("ExecuteProcedure start");
             try
             {
                 using (SqlCommandProperties cp = PrepareCommand(procedureName, CommandType.StoredProcedure, parameters))
@@ -179,6 +184,10 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
 
                 return null;
             }
+            finally
+            {
+                Helper.Logger?.Debug("ExecuteProcedure ends");
+            }
         }
 
         #region ExecuteProcedure Ext
@@ -192,6 +201,7 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
 
         public object ExecuteQuery(string query, CommandType type = CommandType.Text, IEnumerable<IDbDataParameter> parameters = null)
         {
+            Helper.Logger?.Debug("ExecuteQuery start");
             try
             {
                 DataSet res = null;
@@ -215,6 +225,10 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
                     throw ex;
 
                 return null;
+            }
+            finally
+            {
+                Helper.Logger?.Debug("ExecuteQuery ends");
             }
         }
 

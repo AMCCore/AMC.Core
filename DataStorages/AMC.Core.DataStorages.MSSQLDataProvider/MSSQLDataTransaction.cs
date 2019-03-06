@@ -4,7 +4,7 @@ using System.Data;
 using AMC.Core.Abstractions.DataProvider;
 using AMC.Core.Abstractions.DataProvider.Helpers;
 using AMC.Core.Abstractions.DataProvider.Transactions;
-
+using AMC.Core.Abstractions.Logger.Extensions;
 
 namespace AMC.Core.DataStorages.MSSQLDataProvider
 {
@@ -12,6 +12,7 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
     {
         internal MSSQLDataTransaction(IDataHelper Helper, IsolationLevel Level = IsolationLevel.ReadCommitted) : base(Helper)
         {
+            Helper.Logger?.Debug("DataTransaction begin");
             _tran = Connection.BeginTransaction(Level);
             State = SqlDataTransactionState.Open;
         }
@@ -33,6 +34,8 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
             if (State != SqlDataTransactionState.Open)
                 throw new TransactionStateException(nameof(Commit), SqlDataTransactionState.Open.ToString());
             OnCommit();
+
+            Helper.Logger?.Debug("DataTransaction commit");
         }
 
         private void OnCommit()
@@ -48,6 +51,8 @@ namespace AMC.Core.DataStorages.MSSQLDataProvider
             if (State != SqlDataTransactionState.Open)
                 throw new TransactionStateException(nameof(RollBack), SqlDataTransactionState.Open.ToString());
             OnRollBack();
+
+            Helper.Logger?.Debug("DataTransaction rollback");
         }
 
         private void OnRollBack()
