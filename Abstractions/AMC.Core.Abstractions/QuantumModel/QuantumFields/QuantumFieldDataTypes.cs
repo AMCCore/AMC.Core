@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AMC.Core.Abstractions.Quantums.QuantumFields
+namespace AMC.Core.Abstractions.QuantumModel.QuantumFields
 {
     public enum QuantumFieldDataTypes : int
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AMC.Core.Abstractions.Quantums.QuantumHistory
+namespace AMC.Core.Abstractions.QuantumModel.QuantumHistory
 {
     public interface IQuantumHistoryEvent
     {

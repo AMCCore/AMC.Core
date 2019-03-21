@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-using AMC.Core.Abstractions.DataProvider.QueryBuilder;
 using AMC.Core.DataStorages.MSSQLDataProvider;
 using AMC.Core.DataStorages.MSSQLDataProvider.SQLKataQueryBuilderExtention;
 using Microsoft.VisualStudio.TestTools.UnitTesting;

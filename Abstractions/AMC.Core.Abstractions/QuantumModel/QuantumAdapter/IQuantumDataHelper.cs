@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AMC.Core.Abstractions.QuantumAdapter
+namespace AMC.Core.Abstractions.QuantumModel.QuantumAdapter
 {
     public interface IQuantumDataHelper : IDataHelper
     {

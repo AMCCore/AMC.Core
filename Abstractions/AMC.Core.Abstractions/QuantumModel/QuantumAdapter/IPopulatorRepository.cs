@@ -1,9 +1,9 @@
-﻿using AMC.Core.Abstractions.Quantums;
+﻿using AMC.Core.Abstractions.QuantumModel;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AMC.Core.Abstractions.QuantumAdapter
+namespace AMC.Core.Abstractions.QuantumModel.QuantumAdapter
 {
     public interface IPopulatorRepository
     {

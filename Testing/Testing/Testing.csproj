@@ -109,25 +109,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.Cache\AMC.Core.Abstractions.Cache.csproj">
-      <Project>{6b509a26-0eea-40bc-8fd1-99f1752d37b6}</Project>
-      <Name>AMC.Core.Abstractions.Cache</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.DataProvider\AMC.Core.Abstractions.DataProvider.csproj">
-      <Project>{14261fb2-a3e0-4a66-94ac-25daa4ba3d40}</Project>
-      <Name>AMC.Core.Abstractions.DataProvider</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.Logger\AMC.Core.Abstractions.Logger.csproj">
-      <Project>{dbfae6c0-b22f-4e41-bfd3-2a62d65e89a1}</Project>
-      <Name>AMC.Core.Abstractions.Logger</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.QuantumAdapter\AMC.Core.Abstractions.QuantumAdapter.csproj">
-      <Project>{dab43a4a-5199-4488-b7fe-bb884ca622ae}</Project>
-      <Name>AMC.Core.Abstractions.QuantumAdapter</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.Quantums\AMC.Core.Abstractions.Quantums.csproj">
-      <Project>{f3de2cf7-eb96-4956-8794-6f9947745834}</Project>
-      <Name>AMC.Core.Abstractions.Quantums</Name>
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions\AMC.Core.Abstractions.csproj">
+      <Project>{c1c9182a-baae-4099-a7cf-f64a4a21d9fb}</Project>
+      <Name>AMC.Core.Abstractions</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\DataStorages\AMC.Core.DataStorages.MSSQLDataProvider\AMC.Core.DataStorages.MSSQLDataProvider.csproj">
       <Project>{a996fd14-bd6c-4914-b144-a545fc204cb7}</Project>

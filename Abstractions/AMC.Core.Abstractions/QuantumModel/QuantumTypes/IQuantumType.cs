@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AMC.Core.Abstractions.Quantums.QuantumTypes
+namespace AMC.Core.Abstractions.QuantumModel.QuantumTypes
 {
     public interface IQuantumType
     {

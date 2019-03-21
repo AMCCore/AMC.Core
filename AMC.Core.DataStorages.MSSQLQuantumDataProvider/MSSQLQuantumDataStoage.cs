@@ -1,6 +1,6 @@
 ﻿using AMC.Core.Abstractions.DataProvider.Helpers;
-using AMC.Core.Abstractions.QuantumAdapter;
-using AMC.Core.Abstractions.Quantums;
+using AMC.Core.Abstractions.QuantumModel;
+using AMC.Core.Abstractions.QuantumModel.QuantumAdapter;
 using AMC.Core.DataStorages.MSSQLDataProvider;
 using System;
 
@@ -22,7 +22,7 @@ namespace AMC.Core.DataStorages.MSSQLQuantumDataProvider
             CheckPopulatorExists(typeof(T));
             var pop = Helper.PopulatorRepository[typeof(T)];
 
-            ExecuteNonQuery(pop.Delete(entiity));
+            pop.Delete(this, entiity);
 
             Helper.CacheRepository.Remove(entiity);
         }
@@ -35,7 +35,7 @@ namespace AMC.Core.DataStorages.MSSQLQuantumDataProvider
             var res = Helper.CacheRepository.Load(pop.GetCacheble(Id));
             if (res == null)
             {
-                var _res = (T)pop.Populate(ExecuteQuery(pop.BaseLoad(Id)));
+                var _res = (T)pop.Load(this, Id);
                 Helper.CacheRepository.Save(_res);
                 return _res;
             }
@@ -50,7 +50,7 @@ namespace AMC.Core.DataStorages.MSSQLQuantumDataProvider
         {
             CheckPopulatorExists(typeof(T));
             var pop = Helper.PopulatorRepository[typeof(T)];
-            ExecuteNonQuery(pop.CreateOrUpdate(entiity));
+            pop.CreateOrUpdate(this, entiity);
 
             Helper.CacheRepository.Remove(entiity);
         }

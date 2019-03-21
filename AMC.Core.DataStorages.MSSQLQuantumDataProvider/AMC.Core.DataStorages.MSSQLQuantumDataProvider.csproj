@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Abstractions\AMC.Core.Abstractions.Cache\AMC.Core.Abstractions.Cache.csproj" />
-    <ProjectReference Include="..\Abstractions\AMC.Core.Abstractions.DataProvider\AMC.Core.Abstractions.DataProvider.csproj" />
-    <ProjectReference Include="..\Abstractions\AMC.Core.Abstractions.Logger\AMC.Core.Abstractions.Logger.csproj" />
-    <ProjectReference Include="..\Abstractions\AMC.Core.Abstractions.QuantumAdapter\AMC.Core.Abstractions.QuantumAdapter.csproj" />
-    <ProjectReference Include="..\Abstractions\AMC.Core.Abstractions.Quantums\AMC.Core.Abstractions.Quantums.csproj" />
+    <ProjectReference Include="..\Abstractions\AMC.Core.Abstractions\AMC.Core.Abstractions.csproj" />
     <ProjectReference Include="..\DataStorages\AMC.Core.DataStorages.MSSQLDataProvider\AMC.Core.DataStorages.MSSQLDataProvider.csproj" />
     <ProjectReference Include="..\Loggers\AMC.Core.Log4Net\AMC.Core.Log4Net.csproj" />
   </ItemGroup>

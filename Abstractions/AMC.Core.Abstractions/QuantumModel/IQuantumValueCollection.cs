@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AMC.Core.Abstractions.Quantums
+namespace AMC.Core.Abstractions.QuantumModel
 {
     public interface IQuantumValueCollection : IEnumerable
     {

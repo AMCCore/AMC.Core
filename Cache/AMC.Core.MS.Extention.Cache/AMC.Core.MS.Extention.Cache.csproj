@@ -9,8 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.Cache\AMC.Core.Abstractions.Cache.csproj" />
-    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions.Logger\AMC.Core.Abstractions.Logger.csproj" />
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions\AMC.Core.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

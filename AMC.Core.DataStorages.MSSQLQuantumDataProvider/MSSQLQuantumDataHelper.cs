@@ -1,6 +1,6 @@
 ﻿using AMC.Core.Abstractions.Cache.Repository;
 using AMC.Core.Abstractions.Logger;
-using AMC.Core.Abstractions.QuantumAdapter;
+using AMC.Core.Abstractions.QuantumModel.QuantumAdapter;
 using AMC.Core.DataStorages.MSSQLDataProvider;
 
 namespace AMC.Core.DataStorages.MSSQLQuantumDataProvider
