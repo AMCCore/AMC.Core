@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMC.Core.DataStorages.MSSQL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMC.Core.Abstractions", "Abstractions\AMC.Core.Abstractions\AMC.Core.Abstractions.csproj", "{C1C9182A-BAAE-4099-A7CF-F64A4A21D9FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMC.Core.BasicQuantums", "Core\AMC.Core.BasicQuantums\AMC.Core.BasicQuantums.csproj", "{A7621F56-6776-4F73-90E4-60792B028170}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{C1C9182A-BAAE-4099-A7CF-F64A4A21D9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1C9182A-BAAE-4099-A7CF-F64A4A21D9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1C9182A-BAAE-4099-A7CF-F64A4A21D9FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7621F56-6776-4F73-90E4-60792B028170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7621F56-6776-4F73-90E4-60792B028170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7621F56-6776-4F73-90E4-60792B028170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7621F56-6776-4F73-90E4-60792B028170}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{A996FD14-BD6C-4914-B144-A545FC204CB7} = {E138A6C0-93C8-4477-8149-80C68F337D03}
 		{92BE9290-71D5-4161-B37E-99437793E8F3} = {E138A6C0-93C8-4477-8149-80C68F337D03}
 		{C1C9182A-BAAE-4099-A7CF-F64A4A21D9FB} = {851C2636-32FC-4B2F-958A-CDA3D2D17FE2}
+		{A7621F56-6776-4F73-90E4-60792B028170} = {002D0C75-E154-4921-94C7-9306D6A3324C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BE01E95-B84F-4BEF-87F6-0041B806229B}
