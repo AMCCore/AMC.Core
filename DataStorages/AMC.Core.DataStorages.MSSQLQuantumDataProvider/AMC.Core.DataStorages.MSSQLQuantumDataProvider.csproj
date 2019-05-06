@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Abstractions\AMC.Core.Abstractions\AMC.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Core\AMC.Core.BasicQuantums\AMC.Core.BasicQuantums.csproj" />
+    <ProjectReference Include="..\..\Loggers\AMC.Core.Log4Net\AMC.Core.Log4Net.csproj" />
+    <ProjectReference Include="..\AMC.Core.DataStorages.MSSQLDataProvider\AMC.Core.DataStorages.MSSQLDataProvider.csproj" />
+  </ItemGroup>
+
+</Project>
