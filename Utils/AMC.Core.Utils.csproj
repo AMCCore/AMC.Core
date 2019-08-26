@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>AMC.Core Utils</Product>
+    <Authors>AMC.Core</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>http://amc-core.org</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AMCCore/AMC.Core</RepositoryUrl>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+  </PropertyGroup>
+
+</Project>
