@@ -8,6 +8,6 @@ namespace AMC.Core.Abstractions.Logger
 {
     public interface ILogger
     {
-        void Log(LogEntry entry);
+        void Log(ILogEntry entry);
     }
 }

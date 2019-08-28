@@ -33,6 +33,16 @@ namespace AMC.Core.Abstractions.Logger.Extensions
             logger.Log(new LogEntry(LoggingEventType.Warning, Message, exception));
         }
 
+        public static void Error(this ILogger logger, Exception exception)
+        {
+            logger.Log(new LogEntry(LoggingEventType.Error, exception.Message, exception));
+        }
+
+        public static void Error(this ILogger logger, string Message)
+        {
+            logger.Log(new LogEntry(LoggingEventType.Error, Message));
+        }
+
 
         // More methods here.
     }

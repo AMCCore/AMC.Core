@@ -6,6 +6,8 @@ using AMC.Core.DataStorages.MSSQLDataProvider.SQLKataQueryBuilderExtention;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SqlKata;
 using Unity;
+using AMC.Core.Abstractions.Logger;
+using AMC.Core.Abstractions.Logger.Extensions;
 
 namespace Testing
 {
@@ -49,7 +51,7 @@ namespace Testing
             var _loggerFactory = Container.ResolveAll<AMC.Core.Abstractions.Logger.ILoggerFactory>().First();
             var _logger = _loggerFactory.Create(typeof(UnitTest1));
 
-            _logger.Log(new AMC.Core.Abstractions.Logger.LogEntry(AMC.Core.Abstractions.Logger.LoggingEventType.Error, "Hellow WindsorDI"));
+            _logger.Error("Hellow WindsorDI");
         }
 
         [TestMethod]

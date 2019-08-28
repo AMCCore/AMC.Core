@@ -23,7 +23,7 @@ namespace AMC.Core.Log4Net
             _adaptee = log4net.LogManager.GetLogger(type);
         }
 
-        void Abstractions.Logger.ILogger.Log(Abstractions.Logger.LogEntry entry)
+        void Abstractions.Logger.ILogger.Log(Abstractions.Logger.ILogEntry entry)
         {
             switch (entry.Severity)
             {
